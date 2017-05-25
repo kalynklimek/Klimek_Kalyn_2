@@ -7,7 +7,12 @@ public class DeckTester {
 	 * The main method in this class checks the Deck operations for consistency.
 	 *	@param args is not used.
 	 */
-	public static void main(String[] args) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+	public static void main(String[] args) 
+	{
+		String[] suits = {"Hearts", "Spades", "Diamonds", "Clubs"};
+		String[] ranks = {"King", "Queen", "Jack"};
+		int[] values = {1, 2, 3};
+		Deck Cards = new Deck(suits, ranks, values);
+		System.out.println()
 	}
 }

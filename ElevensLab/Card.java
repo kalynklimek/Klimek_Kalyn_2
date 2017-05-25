@@ -20,7 +20,6 @@ public class Card
 	 */
 	private int pointValue;
 
-}
    /**
 	 * Creates a new <code>Card</code> instance.
 	 *
@@ -31,11 +30,11 @@ public class Card
 	 * @param cardPointValue an <code>int</code> value
 	 *                  containing the point value of the card
 	 */
-	public Card(String cardRank, String cardSuit, int cardPointValue) 
+	public Card(String cardSuit, String cardRank, int cardPointValue) 
 	{
-		String rank = cardRank;
-		String suit = cardSuit;
-		int pointValue = cardPointValue;
+		suit = cardSuit;
+		rank = cardRank;
+		pointValue = cardPointValue;
 	}
 
 
@@ -74,7 +73,14 @@ public class Card
 	 */
 	public boolean matches(Card otherCard) 
 	{
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		if (otherCard.suit().equals(this.suit()))
+			return true; 
+		else if (otherCard.rank().equals(this.rank()))
+			return true;
+		else if (otherCard.pointValue() == this.pointValue())
+			return true;
+		else
+			return false;
 	}
 
 	/**
@@ -88,7 +94,8 @@ public class Card
 	 *         and point value of the card.
 	 */
 	@Override
-	public String toString() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	public String toString() 
+	{
+		return rank + "of" + suit + "point value =" + pointValue;	
 	}
 }
