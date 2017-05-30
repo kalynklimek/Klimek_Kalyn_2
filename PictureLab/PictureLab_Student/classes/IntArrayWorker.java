@@ -26,6 +26,13 @@ public class IntArrayWorker
 			count = count + matrix[row][col];
 		}	
 	}	
+	return count;
+  }
+  
+  public int getLargest()
+  {
+	int largest = Integer.MAX_VALUE;
+	for (int row = 0 row < )
   }
   
   public int getTotal()
