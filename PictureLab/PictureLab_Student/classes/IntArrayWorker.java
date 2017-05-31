@@ -32,7 +32,23 @@ public class IntArrayWorker
   public int getLargest()
   {
 	int largest = Integer.MAX_VALUE;
-	for (int row = 0 row < )
+	for (int[] row : matrix)
+	{
+		for (int item : row)
+		{
+			largest = item;
+		}
+	}
+	return largest;
+  }
+  
+  public int getColTotal()
+  {
+	int colTotal = 0;
+	for (int[] row : matrix)
+	{
+		colTotal = row+=col;
+	}
   }
   
   public int getTotal()

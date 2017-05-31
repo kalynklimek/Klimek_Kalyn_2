@@ -17,9 +17,12 @@ public class PictureTester
     beach.explore();
   }
   
-  public static void keepOnlyBlue()
+  public static void testKeepOnlyBlue()
   {
-	
+	Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();  
   }
   
   /** Method to test mirrorVertical */
@@ -120,27 +123,26 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
     //testZeroBlue();
-	//testKeepOnlyBlue();
-    //testKeepOnlyBlue();
+	testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    //testMirrorVertical();
-	//testMirrorVerticalRightToLeft();
-	//testmirrorHorizontal();
-	//testmirrorHorizontalBotToTop();
+    testMirrorVertical();
+	testMirrorVerticalRightToLeft();
+	testmirrorHorizontal();
+	testmirrorHorizontalBotToTop();
     //testMirrorTemple();
-    //testMirrorArms();
-    //testMirrorGull();
+    testMirrorArms();
+    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    //testCopy();
-    testEdgeDetection();
+    testCopy();
+    //testEdgeDetection();
     //testEdgeDetection2();
-    //testMyCollage();
-    //testCopy();
+    testMyCollage();
+    testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();

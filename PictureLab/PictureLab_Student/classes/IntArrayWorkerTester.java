@@ -98,7 +98,7 @@
     testGetCount(); 
     testGetTotal();
     testGetTotalNested();
-    //testGetLargest();
+    testGetLargest();
     //testGetColTotal();
   }
 }
