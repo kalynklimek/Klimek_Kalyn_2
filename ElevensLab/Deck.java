@@ -40,8 +40,8 @@ public class Deck {
 				cards.add(new Card(ranks[i], suit, values[i]));
 			}
 		}			
-		shuffle();
 		size = cards.size();
+		shuffle();
 	}
 
 
@@ -51,10 +51,7 @@ public class Deck {
 	 */
 	public boolean isEmpty() 
 	{
-		if (deck = 0)
-			return true;
-		else
-			return false;
+		return cards.isEmpty();
 	}
 
 	/**
@@ -73,7 +70,13 @@ public class Deck {
 	public void shuffle() 
 	{
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-		
+		for(int k = size -1; k >=0; k--)
+		{
+			int r = (int)(Math.random() *k);
+			Card one = cards.get(r);
+			cards.set(r, cards.get(k));
+			cards.set(k, one);
+		}
 	}
 
 	/**

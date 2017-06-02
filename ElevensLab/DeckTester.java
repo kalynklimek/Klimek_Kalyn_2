@@ -11,7 +11,7 @@ public class DeckTester {
 	{
 		String[] suits = {"Hearts", "Spades", "Diamonds", "Clubs"};
 		String[] ranks = {"King", "Queen", "Jack"};
-		int[] values = {1, 2, 3};
+		int[] values = {11, 12, 13};
 		Deck Cards = new Deck(suits, ranks, values);
 		System.out.println(Cards.deal());
 	}
