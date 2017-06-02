@@ -22,6 +22,7 @@ public class PictureTester
 	Picture beach = new Picture("beach.jpg");
     beach.explore();
     beach.keepOnlyBlue();
+<<<<<<< HEAD
     beach.explore(); 
   }
   
@@ -39,6 +40,9 @@ public class PictureTester
 	mountains.explore();
 	mountains.grayscale();
 	mountains.explore();
+=======
+    beach.explore();  
+>>>>>>> origin/master
   }
   
   /** Method to test mirrorVertical */
@@ -138,7 +142,11 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+<<<<<<< HEAD
     testZeroBlue();
+=======
+    //testZeroBlue();
+>>>>>>> origin/master
 	testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -153,12 +161,21 @@ public class PictureTester
     testMirrorArms();
     testMirrorGull();
     //testMirrorDiagonal();
+<<<<<<< HEAD
     testCollage();
     testCopy();
     testEdgeDetection();
     //testEdgeDetection2();
     testMyCollage();
     //testCopy();
+=======
+    //testCollage();
+    testCopy();
+    //testEdgeDetection();
+    //testEdgeDetection2();
+    testMyCollage();
+    testCopy();
+>>>>>>> origin/master
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();

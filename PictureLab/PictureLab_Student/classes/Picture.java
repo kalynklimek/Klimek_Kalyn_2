@@ -98,6 +98,7 @@ public class Picture extends SimplePicture
     }
   }
   
+<<<<<<< HEAD
  public void keepOnlyBlue()
  {
  	Pixel[][] pixels = this.getPixels2D();
@@ -140,6 +141,21 @@ public class Picture extends SimplePicture
 	}
  }	 
  
+=======
+  public void keepOnlyBlue()
+  {
+	Pixel[][] pixels = this.getPixels2D();
+	for(Pixel[] rowArray : pixels)
+	{
+		for(Pixel pixelObj : rowArray)
+		{
+			pixelObj.setGreen(0);
+			pixelObj.setRed(0);
+		}
+	}
+  }
+  
+>>>>>>> origin/master
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
     * from left to right */

@@ -13,6 +13,6 @@ public class DeckTester {
 		String[] ranks = {"King", "Queen", "Jack"};
 		int[] values = {1, 2, 3};
 		Deck Cards = new Deck(suits, ranks, values);
-		System.out.println()
+		System.out.println(Cards.deal());
 	}
 }

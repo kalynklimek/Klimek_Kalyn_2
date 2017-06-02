@@ -73,6 +73,7 @@ public class Deck {
 	public void shuffle() 
 	{
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+		
 	}
 
 	/**
@@ -83,6 +84,9 @@ public class Deck {
 	public Card deal() 
 	{
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		Card card = cards.remove(size);
+		size = cards.size();
+		return card;
 	}
 
 	/**

@@ -51,7 +51,25 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) 
 	{
+		int[] shuffled = new int[values.length];
+		int half = shuffled.length/2;
+		int k = 0; 
+		int i = 0; //sets i to evens
+		for (; k < half; k++)
+		{
+			//fill 1st half of shuffled with even cards from values
+			shuffled[k] = values[i];
+			i+=2;
+		}
 		
+		i = 1; //sets i to odds
+		//k starts here at half - 1
+		for(; k < shuffled.length; k++)
+		{
+			//fill 2nd half of shuffled with odd cards from values
+			shuffled[k] = values[i];
+			i+=2;
+		}
 	}
 
 	/**
@@ -65,7 +83,16 @@ public class Shuffler {
 	 * searching for an as-yet-unselected card.
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
-	public static void selectionShuffle(int[] values) {
+	public static void selectionShuffle(int[] values) 
+	{
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		for (int k = values.length-1; k >= 0; k--)
+		{
+			int r = (int)(Math.random()*k+1);
+			int shuffled = values[r];
+			values[r] = values[k];
+			values[k] = r;
+		}
+		
 	}
 }
