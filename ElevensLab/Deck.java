@@ -87,7 +87,7 @@ public class Deck {
 	public Card deal() 
 	{
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		Card card = cards.remove(size);
+		Card card = cards.remove(size-1);
 		size = cards.size();
 		return card;
 	}
